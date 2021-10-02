@@ -1,0 +1,338 @@
+:root {
+    --ancho-barras: calc(100vw * 30%) + 20px;
+}
+
+.slide {
+    margin-top: 5px;
+}
+
+.slide img {
+    height: 87.5vh;
+}
+
+.bg-danger {
+    background-color: #F2F5F8 !important;
+}
+
+body {
+    background-color: #F2F5F8;
+}
+
+.nav-link {
+    color: #8172D5 !important;
+    margin-left: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link:hover {
+    color: #574b9c !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(129, 114, 213, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #F2F5F8;
+}
+
+.card-desc {
+    margin-top: 5rem !important;
+}
+
+.card-custom-1 {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 35px;
+}
+
+.title-custom-1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2.2rem;
+    color: #7D7070;
+    margin-top: 1.5rem !important;
+}
+
+@media (min-width: 992px) {
+    .alto-100 {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .alto-101 {
+        width: 30vw;
+    }
+    .cont-v {
+        width: 65vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: #7D7070;
+}
+
+.card-link {
+    font-family: 'Roboto', sans-serif !important;
+    text-decoration: none !important;
+}
+
+.card-link::hover {
+    color: #574b9c !important;
+}
+
+.card-text {
+    margin-top: 1.5rem !important;
+}
+
+.separador {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.lines-effect {
+    display: inline-block;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: #7D7070;
+    font-weight: 600;
+}
+
+.lines-effect::after,
+.lines-effect::before {
+    content: "";
+    position: absolute;
+    width: 30vw;
+    height: 3px;
+    background-color: #E6E7EA;
+    top: 0.6em;
+}
+
+.lines-effect::before {
+    left: -33vw;
+}
+
+.lines-effect::after {
+    right: -33vw;
+}
+
+
+/* Customizando cards de productos */
+
+.card-custom-pr {
+    border-radius: 35px;
+    margin-top: 3.5rem;
+}
+
+.card-title {
+    font-family: 'Roboto', sans-serif;
+    color: #7D7070;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: .5rem;
+}
+
+.center-card {
+    margin-left: 2rem;
+}
+
+
+/* Animacion cards pr */
+
+.single-content {
+    position: relative;
+    transition: .3s;
+}
+
+.single-content .text-content,
+.single-content::after {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    border-radius: 35px;
+}
+
+.single-content::after {
+    content: "";
+    display: block;
+    background-color: #000000;
+    top: 0px;
+    bottom: 0px;
+    opacity: 0;
+    /* transform: rotate3d(-1,-1,0,100deg); */
+    transition: .4s;
+}
+
+.single-content:hover::after {
+    opacity: .59;
+    /* transform: rotate3d(0,0,0,0deg);  */
+}
+
+.text-content {
+    top: 45%;
+    opacity: 0;
+    z-index: 1;
+    transform: translate(10%, -30%);
+    transition: .3s;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.single-content:hover .text-content {
+    opacity: 1;
+    transform: translate(0, -50%);
+    transition-delay: .3s;
+}
+
+.custom-a {
+    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-decoration: none;
+    opacity: .7;
+}
+
+.custom-a:hover {
+    opacity: 1;
+    color: white;
+}
+
+
+/* Cards proyectos */
+
+.img-custom-proy {
+    border-radius: 35px;
+    border: 0;
+}
+
+.link-pry {
+    margin-top: 1.8rem;
+    margin-right: 4rem;
+}
+
+@media (max-width: 992px) {
+    .link-pry {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/* Divisor marcas, dos palabras */
+
+.separador2 {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.lines-effect2 {
+    display: inline-block;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    color: #7D7070;
+    font-weight: 600;
+}
+
+.lines-effect2::after,
+.lines-effect2::before {
+    content: "";
+    position: absolute;
+    width: 29vw;
+    height: 3px;
+    background-color: #E6E7EA;
+    top: 0.6em;
+}
+
+.lines-effect2::before {
+    left: -31vw;
+}
+
+.lines-effect2::after {
+    right: -31vw;
+}
+
+
+/* Estilo marcas */
+
+.cont-brands {
+    margin-top: 2.5rem;
+}
+
+
+/* Estilos sección cotizar */
+
+.btn-center {
+    margin-top: 1.3rem;
+}
+
+.title-custom-2,
+.text-custom-1 {
+    font-family: 'Roboto', sans-serif;
+    color: #312284;
+}
+
+.cont-cotz {
+    margin-top: 3rem;
+}
+
+
+/* Footer */
+
+.footer {
+    background: #152F4F;
+    color: white;
+    .links {
+        ul {
+            list-style-type: none;
+        }
+        li a {
+            color: white;
+            transition: color .2s;
+            &:hover {
+                text-decoration: none;
+                color: #4180CB;
+            }
+        }
+    }
+    .about-company {
+        i {
+            font-size: 25px;
+        }
+        a {
+            color: white;
+            transition: color .2s;
+            &:hover {
+                color: #4180CB
+            }
+        }
+    }
+    .location {
+        i {
+            font-size: 18px;
+        }
+    }
+    .copyright p {
+        border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+}
+
+
+/* About */
+
+
+/* Navbar */
+
+.nav-active {
+    text-decoration: underline;
+}
+
+.card-about-cst-1 {
+    padding-bottom: 1.5rem;
+}
